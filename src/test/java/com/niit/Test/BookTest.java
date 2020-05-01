@@ -2,6 +2,7 @@ package com.niit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,7 @@ public class BookTest
 	
 	
 	@Test
+	//@Ignore
 	public void addBook()
 	{
 	
@@ -32,6 +34,27 @@ public class BookTest
 		assertEquals(true, bookServiceDAO.addBook(b));
 	}
 	
+	@Test
+	@Ignore
+	public void updateBook()
+	{
+		b.setBookid(1);
+		b.setBookname("HATE");
+		assertEquals(true, bookServiceDAO.updateBook(b));
+	}
+	
+	@Test
+	@Ignore
+	public void deleteBook()
+	{
+		assertEquals(true, bookServiceDAO.deleteBook(1));
+	}
+	
+	@Test
+	public void displayBooks()
+	{
+		assertEquals(true, bookServiceDAO.displayBooks());
+	}
 	
 	
 
