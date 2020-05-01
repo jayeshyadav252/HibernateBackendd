@@ -14,7 +14,7 @@ import com.niit.model.User;
 
 @Transactional
 @Repository(value="userDAO")
-public class DAOImpl implements UserDAO 
+public class UserDAOImpl implements UserDAO 
 {
 	@Autowired
 	SessionFactory sessionFactory;

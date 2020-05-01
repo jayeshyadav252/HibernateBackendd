@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 
 import com.niit.DAO.UserDAO;
 
-import com.niit.Service.ServiceDAO;
+import com.niit.Service.UserServiceDAO;
 import com.niit.model.User;
 
 
 @Service
-public class ServiceImpl implements ServiceDAO
+public class UserServiceImpl implements UserServiceDAO
 {
 	@Autowired
 	UserDAO userDAO;

@@ -34,8 +34,8 @@ public class Product
 	public Double getProductprice() {
 		return productprice;
 	}
-	public void setProductprice(Double productprice) {
-		this.productprice = productprice;
+	public void setProductprice(double i) {
+		this.productprice = i;
 	}
 	public int getQuantity() {
 		return quantity;

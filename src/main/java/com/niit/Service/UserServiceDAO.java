@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.niit.model.User;
 
-public interface ServiceDAO 
+public interface UserServiceDAO 
 {
 	public boolean addUser(User user);
 	public boolean updateUser(User user);

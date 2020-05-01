@@ -9,7 +9,7 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.springframework.test.context.junit4.SpringRunner;
 
 
-import com.niit.Service.ServiceDAO;
+import com.niit.Service.UserServiceDAO;
 
 import com.niit.config.AppConfig;
 import com.niit.model.User;
@@ -18,10 +18,10 @@ import com.niit.model.User;
 
 @RunWith(SpringRunner.class)
 @SpringJUnitConfig(classes=AppConfig.class)
-public class Test
+public class UserTest
 {
 	@Autowired
-	ServiceDAO dao;
+	UserServiceDAO dao;
 	
 	User u= new User();
 	
